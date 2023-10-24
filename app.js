@@ -8,7 +8,7 @@ async function start(){
     const data = await response.json()
     createBreedList(data.message)
    } catch (e) {
-    alert('There was a problem fetching the breed list');
+    alert(e);
    }
 }; 
 
